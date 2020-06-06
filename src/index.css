@@ -1,13 +1,95 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*
+{
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  background-color: rgb(212, 32, 32);
+  margin: 0;
+}
+
+h1{
+  background-color: rgb(204, 54, 54);
+  padding: 18px;
+  color: rgb(70, 70, 70);
+  color: white;
+}
+
+.App{
+  width: 80%;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 3px 3px 40px rgb(212, 212, 214);
+}
+
+input{
+  width: 80%;
+  border: 0;
+  padding: 13px 0px;
+  background-color: rgb(211, 212, 212);
+}
+
+button{
+  width: 20%;
+  margin: 0;
+  outline: 0;
+  border: 0;
+  padding: 13px 0;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  background-color: green;
+}
+
+#updateButton
+{
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+}
+
+ul{
+  padding: 0;
+  list-style: none;
+}
+
+li{
+  margin: 15px 0;
+}
+
+li span{
+  width: 60%;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(56, 55, 55);
+}
+
+li > button:first-of-type{
+  width: 19%;
+  margin-right: 1%;
+  color: rgb(63, 63, 63);
+  background-image: linear-gradient(-225deg, #CBBACC 0%, #2580B3 100%); 
+}
+
+li > button:last-of-type{
+  color: rgb(255, 255, 255);
+  background-color: rgb(207, 32, 32);
+
+}
+
+ul > form{
+  margin: 15px 0;
+}
+
+@media only screen and (max-width: 667px) {
+  input{
+    padding-bottom: 28px;
+  }
+}  
+
+@media only screen and (max-width: 667px) and (min-width: 548px) {
+  input{
+    padding-bottom: 13px;
+  }
 }
