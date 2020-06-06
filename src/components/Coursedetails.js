@@ -27,8 +27,12 @@ class CourseDetails extends Component
     //Update Course
     handleSubmit = (e) => {
         e.preventDefault();
+        if (this.input.value == '' )
+        alert ('you should enter name of edit course')
+        else{
         this.props.editCourse(this.props.index , this.input.value )
         this.toggleEdit()
+        }
     }
 
 
